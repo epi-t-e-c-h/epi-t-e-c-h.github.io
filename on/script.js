@@ -16,7 +16,7 @@ function sendLocation() {
 
 function sendToAdmin(latitude, longitude) {
     let xhttp= new XMLHttpRequest()
-    xhttp.open('POST', 'http://192.168.43.118/connections/emergency.php?latitude='+latitude+'&&longitude='+longitude, true)
+    xhttp.open('POST', 'http://192.168.43.118/www.smartrefer.com/connections/emergency.php?latitude='+latitude+'&&longitude='+longitude, true)
     xhttp.send()
     xhttp.onreadystatechange=function (){
         if(this.readyState==4 && this.status==200){
